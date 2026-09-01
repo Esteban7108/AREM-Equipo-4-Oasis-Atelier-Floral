@@ -93,3 +93,11 @@ El BPMN representa el flujo actual de gestión de clientes y pedidos, donde gran
 | ¿Arreglo listo?        | Gateway Exclusivo (XOR) | Determina si el arreglo cumple las condiciones necesarias para continuar con la entrega.                             | Oasis        |
 | Realizar entrega       | Actividad               | Oasis realiza la entrega del arreglo al cliente.                                                                     | Oasis        |
 | Pedido entregado       | Evento de Fin           | Finaliza el proceso cuando el pedido ha sido entregado al cliente.                                                   | Oasis        |
+
+## Referencias — BPMN (Capa de Negocio)
+
+Object Management Group (OMG). Business Process Model and Notation (BPMN) Specification (sección introductoria). https://www.omg.org/spec/BPMN
+Camunda. BPMN Cheat Sheet. https://camunda.com/bpmn/reference/
+Bizagi. BPMN Training Guide. https://www.bizagi.com/
+Astah. (2020). BPMN look and feel. https://astahblog.com/2020/05/29/bpmn-look-and-feel/
+
