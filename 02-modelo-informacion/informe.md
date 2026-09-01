@@ -52,6 +52,11 @@ El modelo cubre el ciclo de vida completo de un pedido personalizado: capturar l
 | PROVEEDOR | Entidad | Tercero que suministra materia prima a la floristería. | Equipo de compras |
 | ENTREGA | Entidad | Registro logístico de la entrega física de un pedido al cliente. | Equipo de logística |
 
+## Referencias — Modelo de información (Arquitectura del Sistema de Información)
+
+Codd, E. F. (1970). A Relational Model of Data for Large Shared Data Banks. Communications of the ACM, 13(6), 377–387. (Base histórica del modelo relacional).
+Conceptos de Normalización de bases de datos: de la Primera (1FN) a la Tercera Forma Normal (3FN).
+IEEE Std 1016-2009. IEEE Standard for Information Technology — Systems Design — Software Design Descriptions. (Recomendaciones para arquitectura de información
 
 
 ---
