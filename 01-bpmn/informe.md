@@ -415,3 +415,8 @@ El proyecto propone diseñar un **sistema de información para apoyar la gestió
 
 El propósito principal es **reducir los retrasos en la atención y mejorar el control del proceso de venta**, manteniendo Instagram y WhatsApp como canales principales de contacto con los clientes.
 
+## Referencias — Visión de la Arquitectura
+
+The Open Group. (2022). TOGAF® Standard, 10th Edition — Introduction and Core Concepts, Fase A: Arquitectura de la Visión. https://www.opengroup.org/togaf
+Zachman, J. A. (1987). A Framework for Information Systems Architecture. IBM Systems Journal, 26(3), 276–292.
+Universidad de La Sabana, Facultad de Ingeniería. (2025). Arquitectura Empresarial [material de curso]. Ing. César Augusto Vega Fernández.
