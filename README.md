@@ -1,9 +1,8 @@
 # Oasis---Atelier-Floral---Arquitectura-empresarial
 
-================================
 
-Equipo: David Esteban Diaz Vargas y Katherin Juliana Moreno Carvajal
-Curso: Arquitectura Empresarial — Universidad de La Sabana
+- Equipo: David Esteban Diaz Vargas y Katherin Juliana Moreno Carvajal
+- Curso: Arquitectura Empresarial — Universidad de La Sabana
 
 📌 En una frase
 ----------------
