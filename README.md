@@ -43,6 +43,5 @@ Todo el análisis que sustenta esta propuesta está documentado carpeta por carp
 | `09-presentacion-final/` | Presentación ejecutiva, plan de implementación y gobernanza |
 
 👥 Contacto
------------
-David Esteban Diaz Vargas | Esteban7108 
-Katherin Juliana Moreno Carvajal | Syreus311
+- David Esteban Diaz Vargas | Esteban7108 
+- Katherin Juliana Moreno Carvajal | Syreus311
