@@ -1,0 +1,70 @@
+<mxGraphModel dx="1325" dy="705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="800" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <mxCell id="titulo" parent="1" style="text;html=1;fontStyle=1;fontSize=16;align=left;verticalAlign=middle;" value="C2 - Vista de Contenedores - Sistema Oasis" vertex="1">
+      <mxGeometry height="30" width="500" x="40" y="20" as="geometry" />
+    </mxCell>
+
+    <mxCell id="cliente" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontStyle=1;" value="&amp;nbsp;Cliente" vertex="1">
+      <mxGeometry height="80" width="160" x="40" y="120" as="geometry" />
+    </mxCell>
+
+    <mxCell id="propietario" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontStyle=1;" value="&amp;nbsp;Propietario" vertex="1">
+      <mxGeometry height="80" width="160" x="40" y="240" as="geometry" />
+    </mxCell>
+
+    <mxCell id="atencion" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontStyle=1;" value="&amp;nbsp;Encargada de&lt;br&gt;Atención" vertex="1">
+      <mxGeometry height="80" width="160" x="40" y="360" as="geometry" />
+    </mxCell>
+
+    <mxCell id="zona_sistema" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;fontStyle=1;fontSize=14;fillColor=none;strokeColor=#666666;" value="Sistema Oasis" vertex="1">
+      <mxGeometry height="420" width="620" x="340" y="80" as="geometry" />
+    </mxCell>
+
+    <mxCell id="appweb" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#438dd5;strokeColor=#2e6295;fontColor=#ffffff;fontStyle=1;" value="&amp;nbsp;App Web Oasis&lt;br&gt;&lt;font style=&quot;font-weight: normal;font-size: 11px&quot;&gt;Aplicación web ligera (acceso vía navegador móvil)&lt;/font&gt;" vertex="1">
+      <mxGeometry height="90" width="240" x="370" y="130" as="geometry" />
+    </mxCell>
+
+    <mxCell id="apirest" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#438dd5;strokeColor=#2e6295;fontColor=#ffffff;fontStyle=1;" value="&amp;nbsp;API REST Oasis&lt;br&gt;&lt;font style=&quot;font-weight: normal;font-size: 11px&quot;&gt;Gestión de solicitudes, cotizaciones, pedidos, estados y notificaciones&lt;/font&gt;" vertex="1">
+      <mxGeometry height="100" width="240" x="370" y="270" as="geometry" />
+    </mxCell>
+
+    <mxCell id="db" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#6b6b6b;strokeColor=#4a4a4a;fontColor=#ffffff;fontStyle=1;boundedLbl=1;" value="&amp;nbsp;Base de Datos Oasis&lt;br&gt;&lt;font style=&quot;font-weight: normal;font-size: 11px&quot;&gt;SQL relacional: Cliente, Solicitud, Cotización, Pedido, Arreglo, Materia Prima, Proveedor, Entrega&lt;/font&gt;" vertex="1">
+      <mxGeometry height="120" width="220" x="680" y="270" as="geometry" />
+    </mxCell>
+
+    <mxCell id="whatsapp" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#8a8a8a;strokeColor=#5c5c5c;fontColor=#ffffff;fontStyle=1;strokeWidth=2;" value="&amp;nbsp;WhatsApp Business API&lt;br&gt;&lt;font style=&quot;font-weight: normal;font-size: 11px&quot;&gt;Sistema externo&lt;/font&gt;" vertex="1">
+      <mxGeometry height="100" width="220" x="1040" y="270" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e1" edge="1" parent="1" source="cliente" target="appweb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;" value="HTTPS">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e2" edge="1" parent="1" source="propietario" target="appweb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;" value="HTTPS">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e3" edge="1" parent="1" source="atencion" target="appweb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;" value="HTTPS">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e4" edge="1" parent="1" source="appweb" target="apirest" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;" value="REST/JSON">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e5" edge="1" parent="1" source="apirest" target="db" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;" value="SQL">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e6" edge="1" parent="1" source="apirest" target="whatsapp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;fontSize=11;" value="REST (envío de notificación)">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="nota" parent="1" style="text;html=1;fontSize=11;align=left;verticalAlign=top;fontColor=#666666;" value="Nota: hosting cloud de bajo costo (Railway / Render / Supabase) no se representa como contenedor aparte en el C2 — se documenta como infraestructura de despliegue en el Taller 4." vertex="1">
+      <mxGeometry height="40" width="700" x="370" y="540" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

@@ -1,0 +1,45 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="LlHYshXHDPGYRY81z81i">
+    <mxGraphModel dx="1414" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="titulo" parent="1" style="text;html=1;fontStyle=1;fontSize=16;align=left;verticalAlign=middle;" value="C1 - Vista de Contexto - Sistema Oasis" vertex="1">
+          <mxGeometry height="30" width="500" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontStyle=1;" value="&amp;nbsp;Cliente&lt;br&gt;&lt;font style=&quot;font-weight: normal;font-size: 11px&quot;&gt;(15-25 años, contacta por redes/WhatsApp)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="propietario" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontStyle=1;" value="&amp;nbsp;Propietario&lt;br&gt;&lt;font style=&quot;font-weight: normal;font-size: 11px&quot;&gt;(elaboración, compras, catálogo)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="40" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="atencion" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontStyle=1;" value="&amp;nbsp;Encargada de Atención&lt;br&gt;&lt;font style=&quot;font-weight: normal;font-size: 11px&quot;&gt;(&quot;Mamá&quot; - contacto y redes)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="40" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="sistema" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#08427b;strokeColor=#052e56;fontColor=#ffffff;fontStyle=1;fontSize=13;" value="&amp;nbsp;Sistema Oasis&lt;br&gt;&lt;font style=&quot;font-weight: normal;font-size: 11px&quot;&gt;Plataforma de Gestión de Clientes y Pedidos&lt;/font&gt;" vertex="1">
+          <mxGeometry height="140" width="280" x="420" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="whatsapp" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#8a8a8a;strokeColor=#5c5c5c;fontColor=#ffffff;fontStyle=1;strokeWidth=2;" value="&amp;nbsp;WhatsApp Business API&lt;br&gt;&lt;font style=&quot;font-weight: normal;font-size: 11px&quot;&gt;Sistema externo&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="220" x="880" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="cliente" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;" target="sistema" value="Envía solicitud de arreglo y&amp;nbsp;&lt;div&gt;consulta estado del pedido&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="propietario" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;" target="sistema" value="Registra catálogo, precios&amp;nbsp;&lt;div&gt;y actualiza elaboración/entrega&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0526" y="-20" as="geometry">
+            <mxPoint x="-20" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="atencion" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;" target="sistema" value="Revisa panel de solicitudes&amp;nbsp;&lt;div&gt;pendientes y gestiona contacto&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="sistema" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;fontSize=11;" target="whatsapp" value="Envía notificación&amp;nbsp;&lt;div&gt;automática&amp;nbsp;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;de cambio&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;de estado (API REST)&lt;/span&gt;&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="leyenda" parent="1" style="text;html=1;fontSize=11;align=left;verticalAlign=top;fontColor=#666666;" value="Nota: Instagram, pasarelas de pago y proveedores de flores no se incluyen porque, según el plan de cambio del cliente, siguen operando como canales/procesos manuales sin integración directa de datos con el Sistema Oasis." vertex="1">
+          <mxGeometry height="40" width="700" x="40" y="520" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
