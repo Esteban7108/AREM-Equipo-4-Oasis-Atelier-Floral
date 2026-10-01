@@ -1,0 +1,70 @@
+<mxGraphModel dx="1325" dy="705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="800" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <mxCell id="titulo" parent="1" style="text;html=1;fontStyle=1;fontSize=16;align=left;verticalAlign=middle;" value="TO-BE de Tecnología - Sistema Oasis (extiende el mapa del Taller 4)" vertex="1">
+      <mxGeometry height="30" width="700" x="40" y="20" as="geometry" />
+    </mxCell>
+
+    <mxCell id="zona_clientes" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;fontStyle=1;fontSize=14;fillColor=none;strokeColor=#666666;" value="Clientes / Dispositivos" vertex="1">
+      <mxGeometry height="420" width="220" x="60" y="90" as="geometry" />
+    </mxCell>
+    <mxCell id="cliente" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&amp;nbsp;Cliente&lt;br&gt;(navegador móvil)" vertex="1">
+      <mxGeometry height="80" width="160" x="90" y="130" as="geometry" />
+    </mxCell>
+    <mxCell id="propietario" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&amp;nbsp;Propietario&lt;br&gt;(navegador móvil)" vertex="1">
+      <mxGeometry height="80" width="160" x="90" y="250" as="geometry" />
+    </mxCell>
+    <mxCell id="atencion" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&amp;nbsp;Encargada de Atención&lt;br&gt;(navegador móvil)" vertex="1">
+      <mxGeometry height="80" width="160" x="90" y="370" as="geometry" />
+    </mxCell>
+
+    <mxCell id="zona_app" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;fontStyle=1;fontSize=14;fillColor=none;strokeColor=#666666;" value="Aplicación - Proveedor Cloud A (sin cambios en esta iteración)" vertex="1">
+      <mxGeometry height="420" width="300" x="380" y="90" as="geometry" />
+    </mxCell>
+    <mxCell id="appweb" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" value="&amp;nbsp;⚠️ App Web Oasis&lt;br&gt;(instancia única — backlog)" vertex="1">
+      <mxGeometry height="80" width="240" x="410" y="150" as="geometry" />
+    </mxCell>
+    <mxCell id="apirest" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" value="&amp;nbsp;⚠️ API REST Oasis&lt;br&gt;(instancia única — backlog)&lt;br&gt;NUEVO flujo: código de verificación" vertex="1">
+      <mxGeometry height="100" width="240" x="410" y="300" as="geometry" />
+    </mxCell>
+
+    <mxCell id="zona_datos" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;fontStyle=1;fontSize=14;fillColor=none;strokeColor=#2e8b57;" value="Datos - Proveedor Cloud B (MEJORADO en esta iteración)" vertex="1">
+      <mxGeometry height="420" width="280" x="740" y="90" as="geometry" />
+    </mxCell>
+    <mxCell id="db" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#2e8b57;strokeColor=#1c5c38;fontColor=#ffffff;fontStyle=1;boundedLbl=1;" value="&amp;nbsp;MEJORADO: Supabase Pro&lt;br&gt;&lt;font style=&quot;font-weight: normal;font-size: 11px&quot;&gt;Cifrado en reposo nativo + backup automático diario (reemplaza el plan gratuito sin backups)&lt;/font&gt;" vertex="1">
+      <mxGeometry height="130" width="230" x="760" y="230" as="geometry" />
+    </mxCell>
+
+    <mxCell id="zona_externo" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;fontStyle=1;fontSize=14;fillColor=none;strokeColor=#666666;" value="Integraciones Externas" vertex="1">
+      <mxGeometry height="420" width="270" x="1060" y="90" as="geometry" />
+    </mxCell>
+    <mxCell id="whatsapp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2e8b57;strokeColor=#1c5c38;fontColor=#ffffff;fontStyle=1;" value="&amp;nbsp;MEJORADO: WhatsApp Business API&lt;br&gt;&lt;font style=&quot;font-weight: normal;font-size: 11px&quot;&gt;Ahora también canal del código de verificación (Módulo de Autenticación)&lt;/font&gt;" vertex="1">
+      <mxGeometry height="110" width="240" x="1080" y="260" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e1" edge="1" parent="1" source="cliente" target="appweb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" value="HTTPS">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e2" edge="1" parent="1" source="propietario" target="appweb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" value="HTTPS">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e3" edge="1" parent="1" source="atencion" target="appweb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" value="HTTPS">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e4" edge="1" parent="1" source="appweb" target="apirest" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" value="REST/JSON">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e5" edge="1" parent="1" source="apirest" target="db" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" value="SQL">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e6" edge="1" parent="1" source="apirest" target="whatsapp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;strokeColor=#2e8b57;fontColor=#2e8b57;fontStyle=1;" value="NUEVO: código de verificación + notificaciones">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="leyenda" parent="1" style="text;html=1;fontSize=11;align=left;verticalAlign=top;fontColor=#666666;" value="Verde = mejora de esta iteración (cierra el riesgo Alto repetido en Talleres 4, 5 y 6: falta de cifrado en reposo y de backups automáticos). El riesgo de instancia única en App Web/API REST queda como backlog explícito para la siguiente iteración." vertex="1">
+      <mxGeometry height="50" width="900" x="380" y="540" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>
