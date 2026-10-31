@@ -15,11 +15,6 @@ Taller 8 - Integración de Vistas de Arquitectura
 
 ---
 
-## Recomendaciones
-
-- Usa formato APA o IEEE para citar.
-- No incluyas fuentes como Wikipedia si hay mejores alternativas.
-- Si usas inteligencia artificial para redactar o investigar, cítalo como "Fuente asistida por IA: Claude (Anthropic), octubre 2026".
 
 ---
 
