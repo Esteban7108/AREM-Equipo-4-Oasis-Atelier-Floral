@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="dEMNez1fDwlLE_dT7Rfb">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1F3864;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=16;arcSize=14;" value="OASIS (Floristería)" vertex="1">
+          <mxGeometry height="90" width="180" x="408.66" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0F9E8F;strokeColor=#FFFFFF;strokeWidth=2;fontColor=#FFFFFF;fontStyle=1;fontSize=13;arcSize=16;" value="CLIENTE (15-25 años)" vertex="1">
+          <mxGeometry height="84" width="170" x="415" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3A600;strokeColor=#FFFFFF;strokeWidth=2;fontColor=#FFFFFF;fontStyle=1;fontSize=13;arcSize=16;" value="WHATSAPP (canal de pedidos)" vertex="1">
+          <mxGeometry height="84" width="170" x="700.316954888546" y="315.2949016875158" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0F9E8F;strokeColor=#FFFFFF;strokeWidth=2;fontColor=#FFFFFF;fontStyle=1;fontSize=13;arcSize=16;" value="PROVEEDOR DE FLORES" vertex="1">
+          <mxGeometry height="84" width="170" x="591.335575687742" y="650.7050983124842" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9AA5AE;strokeColor=#FFFFFF;strokeWidth=2;fontColor=#FFFFFF;fontStyle=1;fontSize=13;arcSize=16;" value="COMPETENCIA (floristerías tradicionales)" vertex="1">
+          <mxGeometry height="84" width="170" x="238.66442431225812" y="650.7050983124842" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3A600;strokeColor=#FFFFFF;strokeWidth=2;fontColor=#FFFFFF;fontStyle=1;fontSize=13;arcSize=16;" value="INSTAGRAM (vitrina y marca)" vertex="1">
+          <mxGeometry height="84" width="170" x="129.68304511145396" y="315.29490168751573" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="c3" style="edgeStyle=none;html=1;strokeColor=#6B7280;endArrow=block;endFill=1;fontColor=#33414B;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;startArrow=block;startFill=1;" target="c4" value="envía solicitud ⇄ entrega arreglo y recibe validación">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="c3" style="edgeStyle=none;html=1;strokeColor=#6B7280;endArrow=block;endFill=1;fontColor=#33414B;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;startArrow=block;startFill=1;" target="c8" value="publica catálogo ⇄ vitrina de la marca">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="c4" style="edgeStyle=none;html=1;strokeColor=#6B7280;endArrow=block;endFill=1;fontColor=#33414B;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" target="c5" value="solicita y recibe cotización">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="c5" style="edgeStyle=none;html=1;strokeColor=#6B7280;endArrow=block;endFill=1;fontColor=#33414B;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" target="c3" value="conversación y pedidos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="c8" style="edgeStyle=none;html=1;strokeColor=#6B7280;endArrow=block;endFill=1;fontColor=#33414B;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" target="c4" value="da a conocer la marca">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="c3" style="edgeStyle=none;html=1;strokeColor=#6B7280;endArrow=block;endFill=1;fontColor=#33414B;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;startArrow=block;startFill=1;" target="c6" value="compra flores ⇄ recibe materia prima">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="c7" style="edgeStyle=none;html=1;dashed=1;strokeColor=#9AA5AE;endArrow=block;endFill=1;fontColor=#9AA5AE;fontSize=10;fontStyle=2;labelBackgroundColor=#FFFFFF;" target="c3" value="referencia de mercado (arreglos estándar)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" parent="1" style="text;html=1;fontStyle=1;fontSize=18;fontColor=#1F3864;align=left;valign=middle;" value="Diagrama de contexto del cliente — Oasis y su entorno" vertex="1">
+          <mxGeometry height="40" width="700" x="20" y="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

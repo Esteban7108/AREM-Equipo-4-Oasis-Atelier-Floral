@@ -1,0 +1,179 @@
+<mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <mxCell id="titulo" parent="1" style="text;html=1;fontStyle=1;fontSize=18;align=left;verticalAlign=middle;" value="Tablero de Integración de Vistas - Sistema Oasis (AS-IS + TO-BE Taller 7)" vertex="1">
+      <mxGeometry height="30" width="900" x="40" y="10" as="geometry" />
+    </mxCell>
+
+    <!-- ===================== CAPA NEGOCIO ===================== -->
+    <mxCell id="capa_negocio" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;align=left;fontStyle=1;fontSize=13;fillColor=#FFF2CC;strokeColor=#D6B656;spacingLeft=10;" value="Vista de Negocio" vertex="1">
+      <mxGeometry height="110" width="1520" x="40" y="55" as="geometry" />
+    </mxCell>
+    <mxCell id="n1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#D6B656;" value="Solicitud de Arreglo" vertex="1">
+      <mxGeometry height="60" width="200" x="70" y="90" as="geometry" />
+    </mxCell>
+    <mxCell id="n2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#D6B656;" value="Cotización y Confirmación" vertex="1">
+      <mxGeometry height="60" width="200" x="320" y="90" as="geometry" />
+    </mxCell>
+    <mxCell id="n3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#D6B656;" value="Elaboración del Arreglo" vertex="1">
+      <mxGeometry height="60" width="200" x="570" y="90" as="geometry" />
+    </mxCell>
+    <mxCell id="n4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#D6B656;" value="Entrega y Notificación de Estado" vertex="1">
+      <mxGeometry height="60" width="220" x="820" y="90" as="geometry" />
+    </mxCell>
+
+    <!-- ===================== CAPA APLICACIONES ===================== -->
+    <mxCell id="capa_apps" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;align=left;fontStyle=1;fontSize=13;fillColor=#DAE8FC;strokeColor=#6C8EBF;spacingLeft=10;" value="Vista de Aplicaciones (Taller 3 + TO-BE Taller 7)" vertex="1">
+      <mxGeometry height="130" width="1520" x="40" y="190" as="geometry" />
+    </mxCell>
+    <mxCell id="appweb" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#438dd5;strokeColor=#2e6295;fontColor=#ffffff;fontStyle=1;" value="&amp;nbsp;MEJORADO: App Web Oasis&lt;br&gt;&lt;font style=&quot;font-weight:normal;font-size:10px&quot;&gt;(agrega casilla de consentimiento)&lt;/font&gt;" vertex="1">
+      <mxGeometry height="80" width="230" x="70" y="225" as="geometry" />
+    </mxCell>
+    <mxCell id="apirest" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#438dd5;strokeColor=#2e6295;fontColor=#ffffff;fontStyle=1;" value="&amp;nbsp;API REST Oasis" vertex="1">
+      <mxGeometry height="80" width="200" x="340" y="225" as="geometry" />
+    </mxCell>
+    <mxCell id="moduloauth" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCC99;strokeColor=#CC6600;fontStyle=1;" value="&amp;nbsp;NUEVO: Módulo de Autenticación Ligera&lt;br&gt;&lt;font style=&quot;font-weight:normal;font-size:10px&quot;&gt;(código de verificación por WhatsApp)&lt;/font&gt;" vertex="1">
+      <mxGeometry height="80" width="260" x="600" y="225" as="geometry" />
+    </mxCell>
+
+    <!-- ===================== CAPA INFORMACIÓN ===================== -->
+    <mxCell id="capa_info" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;align=left;fontStyle=1;fontSize=13;fillColor=#F5F5F5;strokeColor=#666666;spacingLeft=10;" value="Vista de Información (Taller 3 / Modelo de Datos)" vertex="1">
+      <mxGeometry height="130" width="1520" x="40" y="360" as="geometry" />
+    </mxCell>
+    <mxCell id="e_cliente" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#6b6b6b;strokeColor=#4a4a4a;fontColor=#ffffff;fontSize=11;" value="Cliente" vertex="1">
+      <mxGeometry height="80" width="110" x="70" y="395" as="geometry" />
+    </mxCell>
+    <mxCell id="e_solicitud" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#6b6b6b;strokeColor=#4a4a4a;fontColor=#ffffff;fontSize=11;" value="Solicitud" vertex="1">
+      <mxGeometry height="80" width="110" x="200" y="395" as="geometry" />
+    </mxCell>
+    <mxCell id="e_cotizacion" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#6b6b6b;strokeColor=#4a4a4a;fontColor=#ffffff;fontSize=11;" value="Cotización" vertex="1">
+      <mxGeometry height="80" width="110" x="330" y="395" as="geometry" />
+    </mxCell>
+    <mxCell id="e_pedido" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#6b6b6b;strokeColor=#4a4a4a;fontColor=#ffffff;fontSize=11;" value="Pedido" vertex="1">
+      <mxGeometry height="80" width="110" x="460" y="395" as="geometry" />
+    </mxCell>
+    <mxCell id="e_arreglo" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#6b6b6b;strokeColor=#4a4a4a;fontColor=#ffffff;fontSize=11;" value="Arreglo" vertex="1">
+      <mxGeometry height="80" width="110" x="590" y="395" as="geometry" />
+    </mxCell>
+    <mxCell id="e_materiaprima" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#6b6b6b;strokeColor=#4a4a4a;fontColor=#ffffff;fontSize=11;" value="Materia Prima" vertex="1">
+      <mxGeometry height="80" width="120" x="720" y="395" as="geometry" />
+    </mxCell>
+    <mxCell id="e_proveedor" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#6b6b6b;strokeColor=#4a4a4a;fontColor=#ffffff;fontSize=11;" value="Proveedor" vertex="1">
+      <mxGeometry height="80" width="110" x="860" y="395" as="geometry" />
+    </mxCell>
+    <mxCell id="e_entrega" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#6b6b6b;strokeColor=#4a4a4a;fontColor=#ffffff;fontSize=11;" value="Entrega" vertex="1">
+      <mxGeometry height="80" width="110" x="990" y="395" as="geometry" />
+    </mxCell>
+
+    <!-- ===================== CAPA INFRAESTRUCTURA ===================== -->
+    <mxCell id="capa_infra" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;align=left;fontStyle=1;fontSize=13;fillColor=#D5E8D4;strokeColor=#82B366;spacingLeft=10;" value="Vista de Infraestructura (Taller 4 + TO-BE Taller 7)" vertex="1">
+      <mxGeometry height="130" width="1520" x="40" y="530" as="geometry" />
+    </mxCell>
+    <mxCell id="infra_app" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAC775;strokeColor=#B46504;fontStyle=1;" value="&amp;nbsp;App Web + API REST&lt;br&gt;&lt;font style=&quot;font-weight:normal;font-size:10px&quot;&gt;Instancia única (Render/Railway) - riesgo Alto, pendiente&lt;/font&gt;" vertex="1">
+      <mxGeometry height="80" width="260" x="70" y="565" as="geometry" />
+    </mxCell>
+    <mxCell id="infra_bd" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C6E0B4;strokeColor=#548235;fontStyle=1;" value="&amp;nbsp;MEJORADO: Base de Datos Oasis&lt;br&gt;&lt;font style=&quot;font-weight:normal;font-size:10px&quot;&gt;Supabase Pro (cifrado en reposo + backup diario)&lt;/font&gt;" vertex="1">
+      <mxGeometry height="80" width="280" x="370" y="565" as="geometry" />
+    </mxCell>
+    <mxCell id="infra_whatsapp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C6E0B4;strokeColor=#548235;fontStyle=1;fontColor=#000000;" value="&amp;nbsp;MEJORADO: WhatsApp Business API&lt;br&gt;&lt;font style=&quot;font-weight:normal;font-size:10px&quot;&gt;ahora también envía código de verificación&lt;/font&gt;" vertex="1">
+      <mxGeometry height="80" width="280" x="690" y="565" as="geometry" />
+    </mxCell>
+
+    <!-- ===================== CAPA SEGURIDAD ===================== -->
+    <mxCell id="capa_seg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;align=left;fontStyle=1;fontSize=13;fillColor=#F8CECC;strokeColor=#B85450;spacingLeft=10;" value="Vista de Seguridad (Taller 5 STRIDE + Taller 6 Normatividad + TO-BE Taller 7)" vertex="1">
+      <mxGeometry height="130" width="1520" x="40" y="700" as="geometry" />
+    </mxCell>
+    <mxCell id="sec_https" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C6E0B4;strokeColor=#548235;" value="&amp;nbsp;HTTPS en tránsito&lt;br&gt;&lt;font style=&quot;font-weight:normal;font-size:10px&quot;&gt;Cumple (Taller 6)&lt;/font&gt;" vertex="1">
+      <mxGeometry height="80" width="200" x="70" y="735" as="geometry" />
+    </mxCell>
+    <mxCell id="sec_auth" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCC99;strokeColor=#CC6600;" value="&amp;nbsp;NUEVO: Verificación de Identidad&lt;br&gt;&lt;font style=&quot;font-weight:normal;font-size:10px&quot;&gt;mitiga STRIDE T1 - Spoofing (Taller 5)&lt;/font&gt;" vertex="1">
+      <mxGeometry height="80" width="240" x="310" y="735" as="geometry" />
+    </mxCell>
+    <mxCell id="sec_consent" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCC99;strokeColor=#CC6600;" value="&amp;nbsp;NUEVO: Consentimiento Explícito&lt;br&gt;&lt;font style=&quot;font-weight:normal;font-size:10px&quot;&gt;mitiga brecha Ley 1581 (Taller 6)&lt;/font&gt;" vertex="1">
+      <mxGeometry height="80" width="240" x="590" y="735" as="geometry" />
+    </mxCell>
+    <mxCell id="sec_cifrado" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C6E0B4;strokeColor=#548235;" value="&amp;nbsp;MEJORADO: Cifrado en reposo + Backup diario&lt;br&gt;&lt;font style=&quot;font-weight:normal;font-size:10px&quot;&gt;mitiga STRIDE T4 - Information Disclosure (Taller 5)&lt;/font&gt;" vertex="1">
+      <mxGeometry height="80" width="280" x="870" y="735" as="geometry" />
+    </mxCell>
+
+    <!-- ===================== CONEXIONES: NEGOCIO -> APLICACIONES ===================== -->
+    <mxCell id="c1" edge="1" parent="1" source="n1" target="appweb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="c2" edge="1" parent="1" source="n2" target="appweb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="c3" edge="1" parent="1" source="n2" target="moduloauth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;dashed=1;" value="verifica antes de confirmar">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="c4" edge="1" parent="1" source="n3" target="apirest" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" value="actualiza estado">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="c5" edge="1" parent="1" source="n4" target="apirest" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ===================== CONEXIONES: APLICACIONES -> INFORMACIÓN ===================== -->
+    <mxCell id="c6" edge="1" parent="1" source="appweb" target="e_cliente" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="c7" edge="1" parent="1" source="appweb" target="e_solicitud" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="c8" edge="1" parent="1" source="apirest" target="e_cotizacion" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="c9" edge="1" parent="1" source="apirest" target="e_pedido" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="c10" edge="1" parent="1" source="apirest" target="e_arreglo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="c11" edge="1" parent="1" source="apirest" target="e_materiaprima" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="c12" edge="1" parent="1" source="apirest" target="e_proveedor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="c13" edge="1" parent="1" source="apirest" target="e_entrega" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ===================== CONEXIONES: APLICACIONES -> INFRAESTRUCTURA ===================== -->
+    <mxCell id="c14" edge="1" parent="1" source="appweb" target="infra_app" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="c15" edge="1" parent="1" source="apirest" target="infra_app" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" value="">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="c16" edge="1" parent="1" source="apirest" target="infra_bd" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" value="SQL">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="c17" edge="1" parent="1" source="apirest" target="infra_whatsapp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" value="notificación">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="c18" edge="1" parent="1" source="moduloauth" target="infra_whatsapp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;dashed=1;" value="código de verificación">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ===================== CONEXIONES: -> SEGURIDAD (protege/mitiga) ===================== -->
+    <mxCell id="c19" edge="1" parent="1" source="appweb" target="sec_https" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;dashed=1;" value="protege">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="c20" edge="1" parent="1" source="appweb" target="sec_consent" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;dashed=1;" value="protege">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="c21" edge="1" parent="1" source="moduloauth" target="sec_auth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;dashed=1;" value="implementa">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="c22" edge="1" parent="1" source="infra_bd" target="sec_cifrado" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;dashed=1;" value="implementa">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="leyenda" parent="1" style="text;html=1;fontSize=11;align=left;verticalAlign=top;fontColor=#666666;" value="Naranja = elemento NUEVO del Taller 7 (TO-BE) · Verde = elemento MEJORADO del Taller 7 (TO-BE) · Gris/Azul = AS-IS ya definido en Talleres 3-6. El hilo trazado corresponde al ciclo completo de un pedido: Solicitud → Cotización/Confirmación → Elaboración → Entrega, por ser, en un negocio de 2 personas con ~15-20 pedidos/mes, el único proceso de negocio real del cliente (a diferencia de FarmApp, que tiene varios procesos independientes)." vertex="1">
+      <mxGeometry height="40" width="1500" x="40" y="850" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

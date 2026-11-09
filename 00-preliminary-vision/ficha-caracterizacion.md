@@ -108,6 +108,6 @@ Se priorizarían tecnologías gratuitas o de bajo costo y una arquitectura que p
 
 **Nombre del contacto:** Juan David Cetina Gómez  
 
-**Correo electrónico / teléfono:** 317 7598416  
+**Correo electrónico / teléfono:** juandacetina31@gmail.com / 317 7598416  
 
 **Rol o vínculo con la solución:** Representante legal

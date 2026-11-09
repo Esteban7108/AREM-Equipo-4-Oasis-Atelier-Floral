@@ -1,0 +1,69 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="LlHYshXHDPGYRY81z81i">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="titulo" parent="1" style="text;html=1;fontStyle=1;fontSize=16;align=left;verticalAlign=middle;" value="Mapa de Infraestructura y Diagnóstico Técnico - Sistema Oasis" vertex="1">
+          <mxGeometry height="30" width="700" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="zona_clientes" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;fontStyle=1;fontSize=14;fillColor=none;strokeColor=#666666;" value="Clientes / Dispositivos" vertex="1">
+          <mxGeometry height="420" width="220" x="60" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&amp;nbsp;Cliente&lt;br&gt;(navegador móvil)" vertex="1">
+          <mxGeometry height="80" width="160" x="90" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="propietario" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&amp;nbsp;Propietario&lt;br&gt;(navegador móvil)" vertex="1">
+          <mxGeometry height="80" width="160" x="90" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="atencion" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&amp;nbsp;Encargada de Atención&lt;br&gt;(navegador móvil)" vertex="1">
+          <mxGeometry height="80" width="160" x="90" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="zona_app" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;fontStyle=1;fontSize=14;fillColor=none;strokeColor=#666666;" value="Aplicación - Proveedor Cloud A (ej. Render / Railway, plan gratuito o starter)" vertex="1">
+          <mxGeometry height="420" width="300" x="380" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="appweb" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" value="&amp;nbsp;App Web Oasis&lt;br&gt;(instancia única)" vertex="1">
+          <mxGeometry height="80" width="240" x="410" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="apirest" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" value="&amp;nbsp;API REST Oasis&lt;br&gt;(instancia única)" vertex="1">
+          <mxGeometry height="80" width="240" x="410" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="zona_datos" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;fontStyle=1;fontSize=14;fillColor=none;strokeColor=#666666;" value="Datos - Proveedor Cloud B (ej. Supabase, plan gratuito)" vertex="1">
+          <mxGeometry height="420" width="260" x="740" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;boundedLbl=1;" value="&amp;nbsp;Base de Datos Oasis&lt;br&gt;(instancia única, sin backup automático)" vertex="1">
+          <mxGeometry height="120" width="220" x="760" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="zona_externo" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;fontStyle=1;fontSize=14;fillColor=none;strokeColor=#666666;" value="Integraciones Externas" vertex="1">
+          <mxGeometry height="420" width="260" x="1060" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="whatsapp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" value="&amp;nbsp;WhatsApp Business API&lt;br&gt;(cuenta básica, límites de mensajería)" vertex="1">
+          <mxGeometry height="90" width="230" x="1080" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="cliente" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="appweb" value="HTTPS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="propietario" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="appweb" value="HTTPS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="atencion" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="appweb" value="HTTPS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="appweb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="apirest" value="REST/JSON">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="apirest" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="db" value="SQL">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="apirest" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;strokeColor=#b85450;fontColor=#b85450;fontStyle=1;" target="whatsapp" value="límite de mensajería">
+          <mxGeometry relative="1" x="-0.0753" y="-30" as="geometry">
+            <mxPoint x="-25" y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="leyenda" parent="1" style="text;html=1;fontSize=11;align=left;verticalAlign=top;fontColor=#666666;" value="Nota: al ser un sistema monolítico de bajo costo para un equipo de 2 personas, no existe balanceador de carga ni separación geográfica — la agrupación se hace por capa/proveedor cloud, no por región, a diferencia del caso base RedExpress." vertex="1">
+          <mxGeometry height="40" width="900" x="80" y="550" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
