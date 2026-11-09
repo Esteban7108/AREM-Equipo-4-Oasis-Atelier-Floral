@@ -26,24 +26,40 @@ La solución arquitectónica (Acto 3) es un sistema de gestión de clientes y pe
 
 **Por qué el orden no sigue la prioridad del riesgo al pie de la letra.** El único riesgo crítico (R1, gestión manual, Nivel 9) tiene como solución definitiva el sistema propio, que es la fase de mayor esfuerzo. Por eso la primera fase no es esa construcción sino su versión provisional de esfuerzo bajo (registro en Sheets/Airtable), junto con el consentimiento y el aviso de privacidad (R5, bajo esfuerzo). Backup y cifrado (R2, R3) tienen prioridad 2 pero necesitan que exista la base de datos, así que llegan con el sistema. La verificación de identidad (R9) se etiquetó *quick win* en el Taller 7 por su esfuerzo, pero depende de WhatsApp Business API (Fase 3 del cliente, dependencia ya registrada en la hoja «Riesgos y Dependencias» del Taller 7), por lo que aquí cae en Mediano plazo. Del mismo modo, la «migración» a Supabase Pro del Taller 7 se vuelve «aprovisionar directamente en Pro» al desplegar el sistema: no hay base de datos previa que migrar.
 
-## Línea de tiempo
+## Cronograma de actividades
 
-```mermaid
-gantt
-    title Roadmap de Implementación - Oasis Atelier Floral
-    dateFormat YYYY-MM-DD
-    axisFormat %b %y
-    section Quick win
-    Registro básico + aviso de privacidad y ARCO :qw1, 2027-01-11, 28d
-    section Corto plazo
-    Sistema propio en Supabase Pro + HTTPS + casilla :cp1, 2027-02-08, 56d
-    section Mediano plazo
-    WhatsApp + Autenticación Ligera + rate limiting :mp1, 2027-04-05, 63d
-    section Largo plazo
-    Auditoría + RBAC + monitoreo + catálogo en línea :lp1, 2027-06-07, 180d
-```
+Cada fase se descompone en las actividades que la ejecutan. Filas = actividades; columnas = meses de 2027 (■ = mes con trabajo en esa actividad). El Quick win ocupa del 11/01 al 08/02.
 
-**Picos de demanda que condicionan el calendario:** San Valentín (14/02/2027) y Día de la Madre (09/05/2027). Regla del plan: no se pasa a producción ni se cambia nada crítico durante la semana previa a cada pico. Para San Valentín opera el registro básico; el sistema propio entra en producción después. Los módulos de WhatsApp se despliegan antes del 2 de mayo o después del 10 de mayo.
+![Cronograma de Work Packages 2027](vistas-finales/archimate-migracion.png)
+
+| Actividad (Work Package) | Fechas 2027 | Riesgos | Ene | Feb | Mar | Abr | May | Jun | Jul | Ago | Sep | Oct | Nov | Dic |
+|---|---|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **WP-A · Quick win** | **11/01 – 08/02** | **R1, R5, R7** | ■ | ■ |  |  |  |  |  |  |  |  |  |  |
+| A1 · Registro digital en Sheets/Airtable: 7 estados y pendientes | 11/01 – 24/01 | R1, R7 | ■ |  |  |  |  |  |  |  |  |  |  |  |
+| A2 · Sesión práctica con la Encargada y guía de 1 página | 11/01 – 17/01 | R1, R4 | ■ |  |  |  |  |  |  |  |  |  |  |  |
+| A3 · Aviso de privacidad, autorización y política de datos | 18/01 – 31/01 | R5 | ■ |  |  |  |  |  |  |  |  |  |  |  |
+| A4 · Canal ARCO por WhatsApp y Responsable del Tratamiento | 25/01 – 07/02 | R5, R14 | ■ | ■ |  |  |  |  |  |  |  |  |  |  |
+| A5 · Exportación semanal del registro (respaldo provisional) | 25/01 – 07/02 | R2 | ■ | ■ |  |  |  |  |  |  |  |  |  |  |
+| **WP-B · Corto plazo** | **08/02 – 05/04** | **R2, R3, R12** |  | ■ | ■ | ■ |  |  |  |  |  |  |  |  |
+| B1 · Aprovisionar Supabase Pro: cifrado en reposo y backup diario | 08/02 – 21/02 | R2, R3 |  | ■ |  |  |  |  |  |  |  |  |  |  |
+| B2 · Desarrollo de la App Web y la API REST | 15/02 – 21/03 | R1, R7 |  | ■ | ■ |  |  |  |  |  |  |  |  |  |
+| B3 · HTTPS/HSTS y validación de pertenencia del pedido | 08/03 – 21/03 | R3, R12 |  |  | ■ |  |  |  |  |  |  |  |  |  |
+| B4 · Casilla de autorización en el formulario de solicitudes | 15/03 – 21/03 | R5 |  |  | ■ |  |  |  |  |  |  |  |  |  |
+| B5 · Migración de datos, capacitación y salida a producción | 22/03 – 04/04 | R1, R7 |  |  | ■ | ■ |  |  |  |  |  |  |  |  |
+| **WP-C · Mediano plazo** | **05/04 – 07/06** | **R8, R9, R10** |  |  |  | ■ | ■ | ■ |  |  |  |  |  |  |
+| C1 · Cuenta de WhatsApp Business API (aprobación de Meta) | 05/04 – 18/04 | R10 |  |  |  | ■ |  |  |  |  |  |  |  |  |
+| C2 · Notificación automática de estados y cola de reintentos | 19/04 – 01/05 | R8, R10 |  |  |  | ■ | ■ |  |  |  |  |  |  |  |
+| C3 · Autenticación Ligera: código de verificación por WhatsApp | 10/05 – 30/05 | R9 |  |  |  |  | ■ |  |  |  |  |  |  |  |
+| C4 · Rate limiting (límite de solicitudes) en la API | 24/05 – 06/06 | R8 |  |  |  |  | ■ | ■ |  |  |  |  |  |  |
+| **WP-D · Largo plazo** | **07/06 – 04/12** | **R6, R11, R13** |  |  |  |  |  | ■ | ■ | ■ | ■ | ■ | ■ | ■ |
+| D1 · Registro de auditoría y roles diferenciados (RBAC) | 07/06 – 18/07 | R4, R13 |  |  |  |  |  | ■ | ■ |  |  |  |  |  |
+| D2 · Plan pago estable, monitoreo y alerta de créditos | 19/07 – 15/08 | R6 |  |  |  |  |  |  | ■ | ■ |  |  |  |  |
+| D3 · Catálogo digital y solicitud de pedido en línea | 16/08 – 24/10 | R11 |  |  |  |  |  |  |  | ■ | ■ | ■ |  |  |
+| D4 · Política de retención de datos e inducción | 25/10 – 03/12 | R4, R14 |  |  |  |  |  |  |  |  |  | ■ | ■ | ■ |
+
+Las fechas de cada actividad son una propuesta del equipo dentro de las fechas de cada fase; el responsable técnico las ajusta antes del 8 de febrero. El mismo cronograma, con los Gaps que cierra cada fase y los Plateaus intermedios, es la vista ArchiMate `vistas-finales/archimate-migracion.drawio`.
+
+**Picos de demanda que condicionan el calendario:** San Valentín (14/02/2027) y Día de la Madre (09/05/2027). Regla del plan: no se pasa a producción ni se cambia nada crítico durante la semana previa a cada pico. Para San Valentín opera el registro básico; el sistema propio entra en producción después. Los módulos de WhatsApp se despliegan antes del 2 de mayo (notificaciones, actividad C2) o desde el 10 de mayo (Autenticación Ligera, actividad C3).
 
 ## Dependencias entre fases
 
